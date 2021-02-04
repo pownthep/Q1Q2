@@ -1,0 +1,14 @@
+<div class="container">
+  <label for="filter">Filter</label>
+  <input type="text" (input)="filterData($event)" name="filter" />
+  <br />
+  {{ status }}
+  <table>
+    <th>Categories</th>
+    <tr *ngFor="let category of categories">
+      {{
+        category
+      }}
+    </tr>
+  </table>
+</div>

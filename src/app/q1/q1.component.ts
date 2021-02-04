@@ -1,13 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Q1Component } from './q1/q1.component';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  selector: 'app-q1',
+  templateUrl: './q1.component.html',
+  styleUrls: ['./q1.component.css'],
 })
-export class AppComponent {
+export class Q1Component {
   title = 'section2';
   public inputValue = 0;
   modeObjects: mode[];

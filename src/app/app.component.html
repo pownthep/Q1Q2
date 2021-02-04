@@ -1,23 +1,14 @@
-<div class="container">
-  <div class="column">
-    <input
-      type="number"
-      name="number"
-      id="integer-input"
-      [value]="inputValue"
-      (input)="handleInput($event)"
-    />
-    <br />
-    Valid input value: {{ inputValue }}
-  </div>
-  <div class="column">
-    <select [(ngModel)]="selectedMode" (change)="handleSelect()">
-      <option *ngFor="let mode of modeObjects" [ngValue]="mode">
-        {{ mode.name }}
-      </option>
-    </select>
-  </div>
-  <div class="column">
-    {{ output }}
-  </div>
-</div>
+<h1>Section 2</h1>
+<!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
+<nav>
+  <ul>
+    <li>
+      <a routerLink="/first-component" routerLinkActive="active">Question 1</a>
+    </li>
+    <li>
+      <a routerLink="/second-component" routerLinkActive="active">Question 2</a>
+    </li>
+  </ul>
+</nav>
+<!-- The routed views render in the <router-outlet>-->
+<router-outlet></router-outlet>
